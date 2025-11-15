@@ -109,10 +109,10 @@ const Index = () => {
             <Button
               size="lg"
               variant="outline"
-              onClick={() => window.location.href = 'tel:+79991234567'}
+              onClick={() => window.location.href = 'sms:+79991234567?body=Вызов%20Даунов'}
               className="hover-scale text-lg px-8 py-6"
             >
-              <Icon name="Phone" size={24} className="mr-2" />
+              <Icon name="MessageSquare" size={24} className="mr-2" />
               Вызов Даунов
             </Button>
           </div>
