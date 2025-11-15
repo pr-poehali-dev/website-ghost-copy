@@ -98,13 +98,24 @@ const Index = () => {
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Мы создаём невидимое, воплощаем невозможное
           </p>
-          <Button
-            size="lg"
-            onClick={() => scrollToSection('contact')}
-            className="hover-scale text-lg px-8 py-6"
-          >
-            Связаться с нами
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              size="lg"
+              onClick={() => scrollToSection('contact')}
+              className="hover-scale text-lg px-8 py-6"
+            >
+              Связаться с нами
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              onClick={() => window.location.href = 'tel:+79991234567'}
+              className="hover-scale text-lg px-8 py-6"
+            >
+              <Icon name="Phone" size={24} className="mr-2" />
+              Вызов Даунов
+            </Button>
+          </div>
         </div>
       </section>
 
